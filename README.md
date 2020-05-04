@@ -1,7 +1,7 @@
 # leetcode
 my codes for may challenge
 -----------------------------------------------------------------------------------------------------------------------
-# 1 - JEWELS AND STONES 
+## 1 - JEWELS AND STONES 
 ========================
 '''
 You're given strings J representing the types of stones that are jewels, and S representing the stones you have.  Each character in S is a type of stone you have.  You want to know how many of the stones you have are also jewels.
@@ -14,8 +14,8 @@ Input: J = "aA", S = "aAAbbbb"
 Output: 3
 
 '''
-#CODE:
--
+##CODE:
+```
 class Solution:
     def numJewelsInStones(self, J: str, S: str) -> int:
         self.J = J
@@ -37,11 +37,10 @@ class Solution:
                     cnt += 1
             lst.append(cnt)
         return sum(lst)
--    
+```  
 --------------------------------------------------------------------------------------------------------
-#2 RANSOM NOTE
+##2 RANSOM NOTE
 ==============
-'''
 Given an arbitrary ransom note string and another string containing letters from all the magazines, write a function that will return true if the ransom note can be constructed from the magazines ; otherwise, it will return false.
 
 Each letter in the magazine string can only be used once in your ransom note.
@@ -52,10 +51,11 @@ You may assume that both strings contain only lowercase letters.
 canConstruct("a", "b") -> false
 canConstruct("aa", "ab") -> false
 canConstruct("aa", "aab") -> true
-'''
+
 ----
-#CODE (not optimal)
+##CODE (not optimal)
 ----
+```
 class Solution:
     def canConstruct(self, ransomNote: str, magazine: str) -> bool:
         self.ransomNote = ransomNote
@@ -94,10 +94,11 @@ class Solution:
                 return True
         else:
             return True
+
+```
 -----------------------------------------------------------------------------------------------------------------
 
-# 3 NUMBER COMPLEMENT 
-'''
+##3 NUMBER COMPLEMENT 
 Given a positive integer, output its complement number. The complement strategy is to flip the bits of its binary representation.
 
  
@@ -107,10 +108,11 @@ Input: 5
 Output: 2
 Explanation: The binary representation of 5 is 101 (no leading zero bits), and its complement is 010. So you need to output 2.
 
-'''
+
 --
-CODE
+##CODE
 --
+```
 class Solution:
     def findComplement(self, num: int) -> int:
         bn = bin(num)
@@ -124,5 +126,5 @@ class Solution:
         res = "".join(map(str,nm_lst))
         res = int(res,2)
         return res
-
+```
 ------------------------------------------------------------------------------------------------------------------------
