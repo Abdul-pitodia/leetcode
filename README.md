@@ -1,9 +1,9 @@
 # leetcode
-my codes for may challenge
------------------------------------------------------------------------------------------------------------------------
+##my codes for may challenge
+
 ## 1 - JEWELS AND STONES 
-========================
-'''
+
+
 You're given strings J representing the types of stones that are jewels, and S representing the stones you have.  Each character in S is a type of stone you have.  You want to know how many of the stones you have are also jewels.
 
 The letters in J are guaranteed distinct, and all characters in J and S are letters. Letters are case sensitive, so "a" is considered a different type of stone from "A".
@@ -13,7 +13,7 @@ Example 1:
 Input: J = "aA", S = "aAAbbbb"
 Output: 3
 
-'''
+
 ##CODE:
 ```
 class Solution:
@@ -38,9 +38,10 @@ class Solution:
             lst.append(cnt)
         return sum(lst)
 ```  
---------------------------------------------------------------------------------------------------------
+
+
 ##2 RANSOM NOTE
-==============
+
 Given an arbitrary ransom note string and another string containing letters from all the magazines, write a function that will return true if the ransom note can be constructed from the magazines ; otherwise, it will return false.
 
 Each letter in the magazine string can only be used once in your ransom note.
@@ -52,9 +53,9 @@ canConstruct("a", "b") -> false
 canConstruct("aa", "ab") -> false
 canConstruct("aa", "aab") -> true
 
-----
+
 ##CODE (not optimal)
-----
+
 ```
 class Solution:
     def canConstruct(self, ransomNote: str, magazine: str) -> bool:
@@ -96,7 +97,7 @@ class Solution:
             return True
 
 ```
------------------------------------------------------------------------------------------------------------------
+
 
 ##3 NUMBER COMPLEMENT 
 Given a positive integer, output its complement number. The complement strategy is to flip the bits of its binary representation.
@@ -109,9 +110,9 @@ Output: 2
 Explanation: The binary representation of 5 is 101 (no leading zero bits), and its complement is 010. So you need to output 2.
 
 
---
+
 ##CODE
---
+
 ```
 class Solution:
     def findComplement(self, num: int) -> int:
@@ -127,4 +128,4 @@ class Solution:
         res = int(res,2)
         return res
 ```
-------------------------------------------------------------------------------------------------------------------------
+
