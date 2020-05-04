@@ -14,7 +14,7 @@ Input: J = "aA", S = "aAAbbbb"
 Output: 3
 
 
-##CODE:
+## CODE:
 ```
 class Solution:
     def numJewelsInStones(self, J: str, S: str) -> int:
@@ -40,7 +40,7 @@ class Solution:
 ```  
 
 
-##2 RANSOM NOTE
+## 2 RANSOM NOTE
 
 Given an arbitrary ransom note string and another string containing letters from all the magazines, write a function that will return true if the ransom note can be constructed from the magazines ; otherwise, it will return false.
 
@@ -54,7 +54,7 @@ canConstruct("aa", "ab") -> false
 canConstruct("aa", "aab") -> true
 
 
-##CODE (not optimal)
+## CODE (not optimal)
 
 ```
 class Solution:
@@ -99,7 +99,7 @@ class Solution:
 ```
 
 
-##3 NUMBER COMPLEMENT 
+## 3 NUMBER COMPLEMENT 
 Given a positive integer, output its complement number. The complement strategy is to flip the bits of its binary representation.
 
  
@@ -111,7 +111,7 @@ Explanation: The binary representation of 5 is 101 (no leading zero bits), and i
 
 
 
-##CODE
+## CODE
 
 ```
 class Solution:
