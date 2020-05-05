@@ -129,3 +129,89 @@ class Solution:
         return res
 ```
 
+## 4 FIRST UNIQUE CHARACTER IN STRING
+
+Given a string, find the first non-repeating character in it and return it's index. If it doesn't exist, return -1.
+
+Examples:
+
+s = "leetcode"
+return 0.
+
+s = "loveleetcode",
+return 2.
+
+## CODE-1 ( NOT OPTIMAL ):
+'''
+
+class Solution:
+    def firstUniqChar(self, s: str) -> int:
+        new = dict()
+        unique = ''
+        
+        if (s != ''):
+            for alp in set_str:
+                cnt = 0
+                for i in range(len(s)):
+                    if(alp == s[i]):
+                        cnt = cnt + 1
+                new[alp] = cnt
+            print(new)
+            for key in new.keys():
+                if(new[key] == 1):
+                    unique = key
+                    break
+            print(unique)
+                
+                    
+
+            for i in range(len(s)):
+                if(unique == ''):
+                    return -1
+                elif(unique == s[i]):
+                    return i
+                    break
+                else:
+                    continue
+                    
+        else:
+            return -1
+            
+
+'''
+
+## CODE - 2 (OPTIMAL)
+
+'''
+
+class Solution:
+    def firstUniqChar(self, s: str) -> int:
+        if (len(s)!=0):
+            fnd = ''
+            order = []
+            counts = {}
+            for x in s:
+                if x in counts:
+                    counts[x] += 1
+                else:
+                    counts[x] = 1 
+                    order.append(x)
+            #print(counts)
+            for x in order:
+                if counts[x] == 1:
+                    fnd = x
+                    break
+            #print(fnd)
+
+            for i in range(len(s)):
+                if(fnd == s[i]):
+                    return i
+                elif(fnd == ''):
+                    return -1
+                
+            
+            
+        else:
+            return -1
+            
+'''            
