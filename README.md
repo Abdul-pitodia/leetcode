@@ -142,7 +142,7 @@ s = "loveleetcode",
 return 2.
 
 ## CODE-1 ( NOT OPTIMAL ):
-'''
+```
 
 class Solution:
     def firstUniqChar(self, s: str) -> int:
@@ -178,12 +178,11 @@ class Solution:
             return -1
             
 
-'''
+```
 
 ## CODE - 2 (OPTIMAL)
 
-'''
-
+```
 class Solution:
     def firstUniqChar(self, s: str) -> int:
         if (len(s)!=0):
@@ -214,4 +213,4 @@ class Solution:
         else:
             return -1
             
-'''            
+```            
