@@ -1,4 +1,4 @@
-# leetcode
+# leetcode solutions 
 ##my codes for may challenge
 
 ## 1 - JEWELS AND STONES 
